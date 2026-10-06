@@ -1,4 +1,4 @@
-# schwarzschild-orbital-motion
+# Schwarzschild-orbital-motion
 
 A numerical simulation of particle motion in the Schwarzschild spacetime using Python. The project integrates the geodesic equations for a test particle orbiting a non-rotating, spherically symmetric black hole and visualizes the resulting trajectory.
 
@@ -28,11 +28,10 @@ The simulation numerically solves the corresponding radial and angular geodesic 
 For equatorial motion, the equations used in the simulation are
 
 $$
-\frac{d^2r}{d\tau^2}
-=
+\frac{d^2r}{d\tau^2}=
 -\frac{M}{r^2}
 +\frac{L^2}{r^3}
--\frac{3ML^2}{r^4},
+-\frac{3ML^2}{r^4}
 $$
 
 and
@@ -43,11 +42,11 @@ $$
 
 where:
 
-* \(r\) is the radial coordinate,
-* \(\phi\) is the azimuthal coordinate,
-* \(\tau\) is the particle's proper time,
-* \(M\) is the black-hole mass parameter,
-* \(L\) is the particle's specific angular momentum.
+* $r$ is the radial coordinate,
+* $\phi$ is the azimuthal coordinate,
+* $\tau$ is the particle's proper time,
+* $M$ is the black-hole mass parameter,
+* $L$ is the particle's specific angular momentum.
 
 The radial equation contains three contributions:
 
@@ -130,9 +129,9 @@ The trajectory illustrates the relativistic orbital dynamics produced by the Sch
 ## Project Structure
 
 ```text
-schwarzschild-geodesics/
+schwarzschild-orbital-motion/
 ├── src/
-│   └── schwarzschild_orbit.py
+│   └── orbits.py
 ├── figures/
 │   ├── schwarzschild_orbit.png
 │   └── schwarzschild_orbit.gif
@@ -148,13 +147,7 @@ Clone the repository:
 
 ```bash
 git clone <repository-url>
-cd schwarzschild-geodesics
-```
-
-Install the required Python packages:
-
-```bash
-pip install -r requirements.txt
+cd schwarzschild-orbital-motion
 ```
 
 The simulation requires:
@@ -169,7 +162,7 @@ The simulation requires:
 Run the main script with:
 
 ```bash
-python src/schwarzschild_orbit.py
+python src/orbits.py
 ```
 
 The script numerically integrates the geodesic equations and generates:
@@ -194,7 +187,3 @@ The simulation is therefore intended to demonstrate the structure of Schwarzschi
 * S. Carroll, *Spacetime and Geometry: An Introduction to General Relativity*, Addison-Wesley.
 * R. M. Wald, *General Relativity*, University of Chicago Press.
 * C. W. Misner, K. S. Thorne, and J. A. Wheeler, *Gravitation*, W. H. Freeman.
-
-## License
-
-This project is released under the MIT License.
