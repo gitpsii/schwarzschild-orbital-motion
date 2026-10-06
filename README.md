@@ -136,7 +136,6 @@ schwarzschild-orbital-motion/
 │   ├── schwarzschild_orbit.png
 │   └── schwarzschild_orbit.gif
 ├── README.md
-├── requirements.txt
 ├── LICENSE
 └── .gitignore
 ```
